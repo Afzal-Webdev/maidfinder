@@ -340,8 +340,8 @@ article.maid-online {
 }
 
 .lp-sc3__maid-profile-groups {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   /* max-width: 1088px; */
   margin-inline: auto;
@@ -350,7 +350,7 @@ article.maid-online {
   grid-template-columns: 1fr 1fr; */
 
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .maid-profile__slider {

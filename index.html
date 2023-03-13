@@ -2632,23 +2632,23 @@
   </script>
 
   <script>
-    // new Glide('.glide').mount()
+    new Glide('.glide').mount()
     var glideProfiles = new Glide(".glide-profiles", {
       type: "carousel",
-      hoverpause: false,
-      Change: true,
-      animationDuration: 1000,
-      autoplay: true,
-      focusAt: "start",
+      hoverpause: true,
+      change: true,
+      animationDuration: 5000,
+      autoplay:true,
+      focusAt: "center",
       startAt: 1,
-      perView: 1,
+      perView: 1
     });
     glideProfiles.mount();
 
     var glideTestimonies = new Glide(".glide-testimonies", {
       type: "carousel",
       hoverpause: true,
-      Change: true,
+      change: true,
       animationDuration: 2000,
       autoplay: false,
       focusAt: "1",
