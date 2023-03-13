@@ -257,7 +257,7 @@
     section.lp-sc2{padding-inline: 20px;}
     .lp-sc2 .section-heading{font-size: 20pt;line-height: 30px;margin-block: 40px 26px;}
     .lp-sc2--sub-sect{flex-direction: column;}
-    .lp-sc2--sub-sect>figure>img{ content:url("images/res-simple-3-step-process.png");}
+    /* .lp-sc2--sub-sect>figure>img{ content:url("images/res-simple-3-step-process.png");} */
     .lp-sc2--cards{text-align: center;}
     .maid-online a.search-link{margin-inline: auto;    max-width: 171pt;padding: 9pt 33pt;}
     header h3.card-header{font-size: 20pt;line-height: 23px;letter-spacing: 0.6pt;color: #242C42;font-weight: 500;}
@@ -265,7 +265,7 @@
     .maid-available header h3 {font-size: 20pt;color: #242C42;line-height: 22pt;}
     .maid-available,.maid-online{padding-block: 16px 18px;border-radius: 16px;}
     .lp-sc2--sub-sect{margin-bottom: 40px;}
-    .lp-sc3 .section-heading{padding-block: 40pt 24pt;font-size: 20px;}
+    .lp-sc3 .section-heading{padding-block: 40px 24px;font-size: 24px;}
     .lp-sc3>header+p{font-size: 16pt;line-height: 22px;margin-bottom: 27px;padding-inline: 20px;}
     .maid-profile__slider{padding-inline: 20px;}
     .p-sliders__filters{padding: 9px 11px 9px 21px;font-size: 12pt;line-height: 24px;border-radius: 5pt;font-weight: 500;}
@@ -324,6 +324,7 @@
     .be-notified header h2.section-heading{font-size: 20pt;line-height: 20px;}
     .be-notified>p{margin-block: 14px;}
     .lp-form.notify-form .input-group :where(input,input::placeholder){color: white;}
+    .input-group.subs-email>input::placeholder{color: white;}
 
     .footer-links-section{padding-inline:20px ;}
     .click-to-call{font-size: 24pt;}

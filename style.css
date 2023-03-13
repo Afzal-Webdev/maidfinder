@@ -874,6 +874,8 @@ svg.heart-icon path  {
   font-size: 18px;
   color: #1D1D1B;
 }
+.fill-white{fill:white}
+.accordion-button{gap: 1rem;}
 
 .faq-container .accordion-button::after {
   content: '';
