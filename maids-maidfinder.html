@@ -1096,12 +1096,13 @@
 
       let advance_search = document.getElementById("advance-search");
       if (btn_state === "off") {
-
-        advance_search.style.cssText = "visibility:visible;margin-block:1.5rem 2rem;width:100%;transform:scale(1)"
+        
+        advance_search.style.cssText = "display:block; margin-block:1.5rem 2rem;width:100%;"
         btn_state = state.setAttribute("data-state", 'on');
       }
       else if (btn_state === "on") {
-        advance_search.style.cssText = "visibility:hidden;margin-block:0rem; width:0%;padding:0px;transform:scale(0);   transition: transform 500ms linear;"
+        // visibility:hidden;margin-block:0rem; width:0%;padding:0px;transform:scale(0);   transition: transform 500ms linear;
+        advance_search.style.cssText = "display:none;"
         btn_state = state.setAttribute("data-state", 'off');
       }
     }
@@ -1112,13 +1113,13 @@
       let advance_filters = document.getElementById("advance-filters");
       if (btn_state === "off") {
         // margin-block:1.5rem 2rem;width:100%;
-        advance_filters.style.cssText = "display:block;transition: all 500ms linear;"
+        advance_filters.style.cssText = "display:block; margin-block:1.5rem 2rem;width:100%;"
         btn_state = state.setAttribute("data-state", 'on');
 
       }
       else if (btn_state === "on") {
         // visibility:hidden;margin-block:0rem; width:0%;padding:0px;
-        advance_filters.style.cssText = "display:none;  transition: all 500ms linear;"
+        advance_filters.style.cssText = "display:none;"
         btn_state = state.setAttribute("data-state", 'off');
       }
     }

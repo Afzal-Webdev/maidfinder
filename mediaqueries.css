@@ -181,7 +181,7 @@
        /* Maids Page */
     .col-md-3.maids-19{width: 100%;padding-inline: 20px;}
     .col-md-9.maids-81{width: 100%;}
-    .col-md-3.maids-19,#advance-filters{display: hidden;}
+    .col-md-3.maids-19,#advance-filters{display: none;}
     .customer-reviews{padding-block: 65px;}
     .customer-reviews .testimony-card{padding: 20px 30px 35px 30px;}
     .search-and-filter{display: flex;}
