@@ -473,9 +473,13 @@
     .maid-profile__details{max-width: 65.2%;}
     .maid-profile__pic{max-width: 34.8%;}
     .maids{padding-inline: 12px;}
+    
+  .profile-modal--cover>img:first-of-type{height: 50%;}
   }
 
-  .profile-modal--cover>img:first-of-type{height: 50%;}
+
+
+
 
 
 
@@ -497,6 +501,14 @@
 
   }
 
+
+
+  @media screen and (max-width:370px){
+  .search-and-filter>button{gap: 0.5rem;}
+  .maidSalary p:last-of-type,.maidSalary p:first-of-type{font-size: 12px;}
+  .profile-modal-details--tabs .tablinks{font-size: 12px;gap: 5px;}
+  }
+
   @media screen and (max-width:350px){
     .maid-profile__view-details, .maid-profile__hire-now{padding-block: 10px;}
     .maidSpecialities{margin-block:6px 5.5px;}
@@ -509,7 +521,7 @@
     .maid-profile__details{max-width: 65.2%;}
     .maid-profile__pic{max-width: 34.8%;}
     .maidSpecialities p{font-size: 10px;padding: 6px;}
-    .maidSalary p:last-of-type,.maidSalary p:first-of-type{font-size: 12px;}
+
     .maid-profile__nums > figure > figcaption{font-size: 11px;}
 
   }
