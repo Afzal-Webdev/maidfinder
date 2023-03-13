@@ -460,6 +460,11 @@
     .txt-blocks-anywhere p{font-size: 14px;line-height: 20px;}
     .txt-blocks-anywhere h3{font-size: 18px;margin-bottom: 8px;}
 
+    :is(.notify-form,.lp-form) .nice-select span.current{  overflow: hidden;
+      max-width: 11ch;
+      text-overflow: ellipsis;
+      white-space: nowrap;}
+
 
 
   }
