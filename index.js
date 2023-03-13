@@ -195,6 +195,70 @@ class RegModal extends HTMLElement {
 
 customElements.define("registration-modal", RegModal);
 
+// Login Modal
+
+class LoginModal extends HTMLElement{
+  constructor(){
+    super()
+  }
+
+  connectedCallback(){
+    this.innerHTML = `
+    <div class="modal fade " id="login-modal" tabindex="-1" aria-labelledby="login-modal"
+    aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
+  
+        <div class="modal-body reg-modal-body flex-row-reverse">
+          <div class="reg-modal-body__lft login-modal-body__rit">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <figure class="text-center">
+              <img src="images/login-form-welcome.png" alt="Welome | Get registered at Maid Finder">
+              <figcaption class="text-white">Hi</figcaption>
+            </figure>
+            <p class="text-center text-white mb-0">Login And Keep <br/>Up To Date Yourself </p>
+     
+          </div>
+          <div class="reg-modal-body__rit login-modal-body__lft">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+         
+            <form action="#" class="registration-form login-form">
+              <h2 class=" text-center">Login</h2>
+            
+              <div class="field-grps d-flex gap-3 flex-column">
+                <input type="email" class="form-control" placeholder="Enter You Email *">
+                <input type="password" class="form-control" placeholder="Enter New Password">
+              </div>
+           
+  
+              <div class="text-center">
+                <button type="submit" class="reg-form-submit">Submit</button>
+              </div>
+  
+              <p class="forgot-pswrd">Forgot Your Password?</p>
+              <p class="login-here text-center">If You Already Have An Account <a href="#registration-modal" type="button" data-bs-toggle="modal"
+                data-bs-target="#registration-modal">Register Here</a>
+              </p>
+  
+  
+            </form>
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    `
+  }
+}
+
+customElements.define("login-modal",LoginModal)
+
 
 // Footer Components begins here
 
@@ -290,8 +354,9 @@ class Footer extends HTMLElement{
             <h3>Packages</h3>
           </header>
           <ul class="footer-links-ul">
-            <li><a href="#">Register Now</a></li>
-            <li><a href="#">About Access Packages</a></li>
+            <li><a href="#registration-modal" type="button" data-bs-toggle="modal"
+            data-bs-target="#registration-modal">Register Now</a></li>
+            <li><a href="packages-maidfinder.html">About Access Packages</a></li>
             <li><a href="#">Term & Conditions</a></li>
           </ul>
         </article>
@@ -301,17 +366,17 @@ class Footer extends HTMLElement{
             <h3>Search Maids</h3>
           </header>
           <ul class="footer-links-ul">
-            <li><a href="#">Search all maids/ nannies</a></li>
-            <li><a href="#">Live in maids/ nannies</a></li>
-            <li><a href="#">Own visa Maids</a></li>
+            <li><a href="maids-maidfinder.html">Search all maids/ nannies</a></li>
+            <li><a href="maids-maidfinder.html">Live in maids/ nannies</a></li>
+            <li><a href="maids-maidfinder.html">Own visa Maids</a></li>
 
-            <li><a href="#">full time live out maids/ nannies</a></li>
-            <li><a href="#">Part time maids</a></li>
-            <li><a href="#">Monthly maids – Temporary maids</a></li>
+            <li><a href="maids-maidfinder.html">full time live out maids/ nannies</a></li>
+            <li><a href="maids-maidfinder.html">Part time maids</a></li>
+            <li><a href="maids-maidfinder.html">Monthly maids – Temporary maids</a></li>
 
-            <li><a href="#">Nannies for new Born</a></li>
-            <li><a href="#">Maids accepting salary from 1,300 aed</a></li>
-            <li><a href="#">Full time house maids</a></li>
+            <li><a href="maids-maidfinder.html">Nannies for new Born</a></li>
+            <li><a href="maids-maidfinder.html">Maids accepting salary from 1,300 aed</a></li>
+            <li><a href="maids-maidfinder.html">Full time house maids</a></li>
           </ul>
         </article>
 

@@ -206,7 +206,9 @@
      .blogs .gy-575{--bs-gutter-y:2rem;}
      .visa-cost .container{padding-inline: 20px;}
      .sponsorship-table-wrapper,.sponsorship-table-footer.second{width: 1200px;}
-      
+
+     /* Footer */
+     .pay-securely+span{    display: flex;gap: 10px;justify-content: center;align-items: center; padding-bottom: 1rem;}      
   }
 
   @media screen and (max-width:850px) {
@@ -437,7 +439,7 @@
     /* .maidSpecialities p:nth-of-type(n+4){display: none;} */
     .maid-profile__pic :is(.play-icon,figcaption){display: none;}
     .footer-banking{padding-inline: 20px;}
-    .pay-securely+span{    display: flex;gap: 10px;justify-content: center;align-items: center;}
+
 
     .navbar{padding-block: 32px 16px;}
     .resourcesCards .container{padding-block: 40px;}
@@ -477,8 +479,7 @@
   .profile-modal--cover>img:first-of-type{height: 50%;}
   }
 
-
-
+ 
 
 
 
@@ -501,13 +502,15 @@
 
   }
 
+  @media screen and (max-width:380px){
+    .search-and-filter>button{gap: 0.5rem;}
+    .maidSalary p:last-of-type,.maidSalary p:first-of-type{font-size: 12px;}
+    .profile-modal-details--tabs .tablinks{font-size: 12px;gap: 5px;}
+    }
 
 
-  @media screen and (max-width:370px){
-  .search-and-filter>button{gap: 0.5rem;}
-  .maidSalary p:last-of-type,.maidSalary p:first-of-type{font-size: 12px;}
-  .profile-modal-details--tabs .tablinks{font-size: 12px;gap: 5px;}
-  }
+
+
 
   @media screen and (max-width:350px){
     .maid-profile__view-details, .maid-profile__hire-now{padding-block: 10px;}
