@@ -1111,11 +1111,14 @@
 
       let advance_filters = document.getElementById("advance-filters");
       if (btn_state === "off") {
-        advance_filters.style.cssText = "visibility:visible;margin-block:1.5rem 2rem;width:100%;transform:scale(1)"
+        // margin-block:1.5rem 2rem;width:100%;
+        advance_filters.style.cssText = "display:block;transition: all 500ms linear;"
         btn_state = state.setAttribute("data-state", 'on');
+
       }
       else if (btn_state === "on") {
-        advance_filters.style.cssText = "visibility:hidden;margin-block:0rem; width:0%;padding:0px;transform:scale(0);   transition: transform 500ms linear;"
+        // visibility:hidden;margin-block:0rem; width:0%;padding:0px;
+        advance_filters.style.cssText = "display:none;  transition: all 500ms linear;"
         btn_state = state.setAttribute("data-state", 'off');
       }
     }
