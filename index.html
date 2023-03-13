@@ -2570,55 +2570,54 @@
 
   <!-- Login Modal -->
 
-  <div class="modal fade " id="login-modal" tabindex="-1" aria-labelledby="login-modal"
-  aria-hidden="true">
-  <div class="modal-dialog ">
-    <div class="modal-content ">
+  <div class="modal fade " id="login-modal" tabindex="-1" aria-labelledby="login-modal" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
 
-      <div class="modal-body reg-modal-body flex-row-reverse">
-        <div class="reg-modal-body__lft login-modal-body__rit">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <figure class="text-center">
-            <img src="images/login-form-welcome.png" alt="Welome | Get registered at Maid Finder">
-            <figcaption class="text-white">Hi</figcaption>
-          </figure>
-          <p class="text-center text-white mb-0">Login And Keep <br/>Up To Date Yourself </p>
-   
-        </div>
-        <div class="reg-modal-body__rit login-modal-body__lft">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-       
-          <form action="#" class="registration-form login-form">
-            <h2 class=" text-center">Login</h2>
-          
-            <div class="field-grps d-flex gap-3 flex-column">
-              <input type="email" class="form-control" placeholder="Enter You Email *">
-              <input type="password" class="form-control" placeholder="Enter New Password">
+        <div class="modal-body reg-modal-body flex-row-reverse">
+          <div class="reg-modal-body__lft login-modal-body__rit">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-         
+            <figure class="text-center">
+              <img src="images/login-form-welcome.png" alt="Welome | Get registered at Maid Finder">
+              <figcaption class="text-white">Hi</figcaption>
+            </figure>
+            <p class="text-center text-white mb-0">Login And Keep <br />Up To Date Yourself </p>
 
-            <div class="text-center">
-              <button type="submit" class="reg-form-submit">Submit</button>
+          </div>
+          <div class="reg-modal-body__rit login-modal-body__lft">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <p class="forgot-pswrd">Forgot Your Password?</p>
-            <p class="login-here text-center">If You Already Have An Account <a href="#registration-modal" type="button" data-bs-toggle="modal"
-              data-bs-target="#registration-modal">Register Here</a>
-            </p>
+            <form action="#" class="registration-form login-form">
+              <h2 class=" text-center">Login</h2>
+
+              <div class="field-grps d-flex gap-3 flex-column">
+                <input type="email" class="form-control" placeholder="Enter You Email *">
+                <input type="password" class="form-control" placeholder="Enter New Password">
+              </div>
 
 
-          </form>
+              <div class="text-center">
+                <button type="submit" class="reg-form-submit">Submit</button>
+              </div>
+
+              <p class="forgot-pswrd">Forgot Your Password?</p>
+              <p class="login-here text-center">If You Already Have An Account <a href="#registration-modal"
+                  type="button" data-bs-toggle="modal" data-bs-target="#registration-modal">Register Here</a>
+              </p>
 
 
+            </form>
+
+
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- Modal -->
   <registration-modal></registration-modal>
@@ -2651,17 +2650,18 @@
       hoverpause: true,
       change: true,
       animationDuration: 5000,
-      autoplay:false,
+      autoplay: true,
       focusAt: "1",
       startAt: 1,
       perView: 2,
-      // bound:true
+
       breakpoints: {
 
-992: {
-  perView: 1
-}
-}
+        992: {
+      
+          perView: 1,
+        }
+      }
     });
     glideProfiles.mount();
 
