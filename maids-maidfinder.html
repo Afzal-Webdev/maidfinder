@@ -1097,11 +1097,11 @@
       let advance_search = document.getElementById("advance-search");
       if (btn_state === "off") {
 
-        advance_search.style.cssText = "height:100%;visibility:visible;margin-block:1.5rem 2rem;width:100%;transform:scale(1)"
+        advance_search.style.cssText = "height:auto;;visibility:visible;margin-block:1.5rem 2rem;width:100%;transform:scale(1)"
         btn_state = state.setAttribute("data-state", 'on');
       }
       else if (btn_state === "on") {
-        advance_search.style.cssText = "height:0%;visibility:hidden;margin-block:0rem; width:0%;padding:0px;transform:scale(0);   transition: transform 500ms cubic-bezier(0.22, 0.98, 0.42, 1.64);"
+        advance_search.style.cssText = "height:0%;visibility:hidden;margin-block:0rem; width:0%;padding:0px;transform:scale(0);   transition: transform 500ms linear;"
         btn_state = state.setAttribute("data-state", 'off');
       }
     }
@@ -1111,11 +1111,11 @@
 
       let advance_filters = document.getElementById("advance-filters");
       if (btn_state === "off") {
-        advance_filters.style.cssText = "height:100%;visibility:visible;margin-block:1.5rem 2rem;width:100%;transform:scale(1)"
+        advance_filters.style.cssText = "height:auto;visibility:visible;margin-block:1.5rem 2rem;width:100%;transform:scale(1)"
         btn_state = state.setAttribute("data-state", 'on');
       }
       else if (btn_state === "on") {
-        advance_filters.style.cssText = "height:0%;visibility:hidden;margin-block:0rem; width:0%;padding:0px;transform:scale(0);   transition: transform 500ms cubic-bezier(0.22, 0.98, 0.42, 1.64);"
+        advance_filters.style.cssText = "height:0%;visibility:hidden;margin-block:0rem; width:0%;padding:0px;transform:scale(0);   transition: transform 500ms linear;"
         btn_state = state.setAttribute("data-state", 'off');
       }
     }
