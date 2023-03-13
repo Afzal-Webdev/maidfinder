@@ -2646,7 +2646,7 @@
   <script>
     new Glide('.glide').mount()
     var glideProfiles = new Glide(".glide-profiles", {
-      type: "slider",
+      type: "carousel",
       hoverpause: true,
       change: true,
       animationDuration: 5000,
@@ -2660,6 +2660,7 @@
         992: {
       
           perView: 1,
+          hoverpause: false
         }
       }
     });
