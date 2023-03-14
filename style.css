@@ -480,6 +480,7 @@ article.maid-online {
   gap: 6px;
   margin-block: 18px;
   overflow-x: scroll;
+  white-space: nowrap;
 }
 
 .maidSpecialities::-webkit-scrollbar,
@@ -548,9 +549,7 @@ article.maid-online {
 .maid-profile__hire-now:hover{
   animation: bounce 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) ;
 }
-svg.heart-icon path  {
-  fill: white;
-}
+
 @keyframes bounce {
 	0%, 100%, 20%, 50%, 80% {
 		-webkit-transform: translateY(0);
@@ -874,7 +873,10 @@ svg.heart-icon path  {
   font-size: 18px;
   color: #1D1D1B;
 }
-.fill-white{fill:white}
+.heart-icon.white path {
+  fill: #fff;
+  transition: fill 1s linear;
+}
 .accordion-button{gap: 1rem;}
 
 .faq-container .accordion-button::after {
@@ -2083,7 +2085,13 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 100%;
 }
 
-
+.swipe-blog-posts{background-color: #FAF9FA;border-radius: 20px;border: 1px solid #E2E2E2;padding: 30px;margin-block: 50px 60px;gap: 2rem;}
+:is(.previous-blog-post,.next-blog-post) button{all:unset;margin-bottom: 10px;height: 40px;width: 40px;border-radius: 4px;}
+:is(.previous-blog-post,.next-blog-post) h3{margin-bottom: 0px;font-size: 24px;line-height: 28px;}
+.previous-blog-post button{background-color: #919191;}
+.previous-blog-post h3{color: #919191;}
+.next-blog-post button{background-color: #A07FB5;}
+.next-blog-post h3{color: #A07FB5;}
 /* _________________________________________________FAQs__________________________________________________ */
 .all-faqs {
   padding-block: 90px;
