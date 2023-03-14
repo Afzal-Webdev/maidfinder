@@ -814,7 +814,7 @@ article.maid-online {
   top: -13px;
   border-left: 9px solid #242C42;
   border-right: 9px solid #242C42;
-  ;
+  transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 }
 
@@ -971,7 +971,7 @@ article.maid-online {
 
 .notify-form .input-group .form-control {
 
-  border-TOP-left-radius: 0px;
+  border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 
 }
@@ -1039,12 +1039,22 @@ article.maid-online {
   background-color: #ae92c0;
 }
 
-.notify-form .nice-select span.current {
+:is(.notify-form,.lp-form) .nice-select span.current {
   display: inline-block;
 
   line-height: 20px;
   font-size: 18px;
   vertical-align: top;
+}
+
+.testimony-card:hover::before{
+  transform: rotate(90deg);
+  transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
+  animation: moveit 5s infinite alternate;
+  
+}
+@keyframes moveit{
+  to{transform: translateX(500px) rotate(90deg); ;opacity: 0;}
 }
 
 /* .subs-email input {

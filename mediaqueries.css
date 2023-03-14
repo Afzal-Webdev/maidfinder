@@ -298,7 +298,7 @@
     .get-the-job a{margin-inline: auto;font-size: 14pt;padding: 12px 22px;}
     .lp-sc7{padding-inline: 20px;padding-block: 40px;}
     .lp-sc7>header{margin-bottom: 20px;}
-    :is(.lp-sc7,.lp-sc8) header h2.section-heading{font-size: 20pt;line-height: 23px;}
+    :is(.lp-sc7,.lp-sc8) header h2.section-heading{font-size: 26px;line-height: 23px;}
     .faq-links a{font-size: 13pt;line-height: 16px;font-weight: 500;}
     .faq-links a:first-of-type{width: 20%;}
     .faq-links a:last-of-type{width: 80%;}
@@ -465,13 +465,8 @@
     .txt-blocks-anywhere p{font-size: 14px;line-height: 20px;}
     .txt-blocks-anywhere h3{font-size: 18px;margin-bottom: 8px;}
 
-    :is(.notify-form,.lp-form) .nice-select span.current{  overflow: hidden;
-      max-width: 11ch;
-      text-overflow: ellipsis;
-      white-space: nowrap;}
 
-
-
+    :is(.notify-form,.lp-form) .nice-select span.current {overflow: hidden;max-width: 18ch;text-overflow: ellipsis;white-space:nowrap;}
   }
   @media screen and (max-width:500px){
 
@@ -521,6 +516,10 @@
     }
 
 
+    @media screen and (max-width:360px){
+    :is(.notify-form,.lp-form) .nice-select span.current{max-width: 12ch;}
+    }
+
 
 
 
@@ -554,7 +553,7 @@
     .lp-form .nice-select{width: 50%;} 
     .lp-form .input-group{border-top: 1px solid #e0e7ee;}
     .lp-form .input-group{padding-block: 12px;}
-    .lp-form .current{font-size: 12px;}
+    .lp-form .nice-select span.current{font-size: 12px;}
     .lp-form .input-group input, .lp-form .input-group input::placeholder{font-size: 12pt;}
     .lp-form :is(.input-group, input){border-radius: 0 0 5px 5px;}
     .faq-links a{font-size: 10pt;}
