@@ -168,7 +168,6 @@ ul.nav-dropdowns li:not(:last-of-type){margin-bottom: 14px;}
 }
 
 .lp-form .input-group button {
-  background-color: #879aa2;
   border-color: transparent;
   border-radius: 0 10px 10px 0;
 
@@ -182,6 +181,11 @@ ul.nav-dropdowns li:not(:last-of-type){margin-bottom: 14px;}
   border-left: 1px solid #D6D6D6;
 }
 
+
+.lp-form .input-group button:hover svg{
+  animation:rotate-center 0.4s;
+}
+@keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
 .lp-form .input-group button:hover path {
   fill: #A07FB5;
 }
@@ -268,6 +272,8 @@ section.lp-sc2 {
   margin-block: 99px 107px;
   text-align: center;
 }
+
+
 
 .lp-sc2--sub-sect {
   gap: 35px;
@@ -395,7 +401,9 @@ article.maid-online {
   left: 18px;
   top: 20px;
   cursor: pointer;
+  transition: all 0.5s linear;
 }
+.maid-profile__pic .heart-icon:hover{scale: 1.2;}
 
 .maid-profile__pic .play-icon {
   right: 20px;
@@ -533,8 +541,7 @@ article.maid-online {
   color: #A07FB5;
   background-color: #F8FBFF;
 }
-.maid-profile__view-details:hover{animation: pulse 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
-  box-shadow: 0 0 4em 2em transparent;}
+:is(.maid-profile__view-details,.hero-searchMaids):hover{animation: pulse 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;box-shadow: 0 0 4em 2em transparent;}
   @keyframes pulse {
     0% { box-shadow: 0 0 0 0 #A07FB5;; }
   }
@@ -1127,6 +1134,10 @@ a {
   display: flex;
   gap: 10px;
 }
+.social-icons>a:hover{animation:vibrate 1.5s linear both;}
+
+
+@keyframes vibrate{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
 
 .footer-banking {
   display: flex;
