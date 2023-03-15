@@ -41,7 +41,7 @@ class Header extends HTMLElement {
         <li><a href="">About Hiring a Maid</a></li>
         <li><a href="">Interview Questions</a></li>
         <li><a href="">Sample Questions</a></li>
-        <li><a href="">Maid Visa Cost</a></li>
+        <li><a href="maid-visa-cost-maidfinder.html">Maid Visa Cost</a></li>
         </ul>
         </li>
         <li><img class="" src = "images/nav-contact.svg" /><a href="contact-maidfinder.html" class="nav-item">Contact</a></li>
