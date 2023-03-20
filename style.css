@@ -2265,7 +2265,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .sponsorship-table td.placement-pkg{padding-inline: 40px 12px;}
 
 /* Tables Modification */
-.sponsorship-tables-group{gap: 16px;flex-wrap: wrap;}
+/* flex-wrap: wrap; */
+.sponsorship-tables-group{gap: 16px;}
 .sponsorship-table-box{    border: 0.75px solid #D6D6D6;border-radius: 20px;width: 100%;flex-basis: 24.1%;flex-grow: 1;}
 .first-blank-row{height: 20px;background-color: #747373;border-radius: 20px 20px 0px 0px;}
 .last-blank-row{height: 39px;background-color: #747373;border-radius: 0px 0px 20px 20px;}
@@ -2369,3 +2370,12 @@ input[type="number"]::-webkit-inner-spin-button {
 .txt-blocks-anywhere{padding: 60px;border: 0.75px solid #D6D6D6;background-color: white;border-radius: 20px; max-width: 1364px;width: 100%;margin-inline: auto;margin-bottom: 30px;}
 .txt-blocks-anywhere h3{font-size: 30px;line-height: 30px;color: #242C42;margin-bottom: 22px;}
 .txt-blocks-anywhere p{font-size:16px;line-height:30px;color:#919191;}
+
+.responsive--card-labels{
+  display: none;
+  position: absolute;
+  top: -0.7rem;
+  background: rgb(54 52 52 / 50%);
+  padding-inline: 1rem;
+  color: white;
+  border-radius: 1rem;}

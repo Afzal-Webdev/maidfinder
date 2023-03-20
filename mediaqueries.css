@@ -23,6 +23,9 @@
     .faq-container{padding: 40px 53px 44px 45px;}
     .visa-cost .container {padding-inline: 80px;}
     .sponsorship-table-box{flex-basis: 48%;}
+    .table-box--headers>p:first-of-type{font-size: 18px;line-height: 24px;}
+    .table-box--headers{padding-inline: 18px;}
+    .first-blank-row ~ div:not(.table-box--headers){padding-inline: 18px;}
 
   }
   
@@ -154,6 +157,11 @@
     .login-modal-body__lft .modal-header{display: flex;}
     .registration-form.login-form{padding-block: 80px 40px;}
     .navbar-links li:hover .nav-dropdowns{visibility: hidden; }
+
+    .responsive--card-labels{display: block;}
+    .parent-sponsorship-box{display: none;}
+    .first-blank-row ~ div:not(.table-box--headers){padding-block: 16.5px;}
+    .box--headers__extra-info {font-size: 12px;}
 
   }
 
@@ -427,6 +435,9 @@
       .best-option-card>p:nth-of-type(1){font-size: 30px;line-height: 30px;}
       .best-option-card>p:nth-of-type(2){line-height: 20px;}
       .best-rights-reserved{line-height: 20px;margin-top: 1rem;}
+
+      /* Ok */
+      .sponsorship-tables-group{flex-direction: column;}
   }
   @media screen and (max-width:575px) {
     .contact-form{margin-bottom: 3rem;}
