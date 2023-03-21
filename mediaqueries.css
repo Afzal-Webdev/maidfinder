@@ -160,8 +160,11 @@
 
     .responsive--card-labels{display: block;}
     .parent-sponsorship-box{display: none;}
-    .first-blank-row ~ div:not(.table-box--headers){padding-block: 16.5px;}
+    .first-blank-row ~ div:not(.table-box--headers){padding-block: 0px 6px;}
     .box--headers__extra-info {font-size: 12px;}
+    .tr{height: auto;}
+
+    /* .first-blank-row ~ div:not(.table-box--headers){margin-bottom: 6px;} */
 
   }
 
@@ -184,6 +187,15 @@
     /* .navbar-links::before{content: '';display: inline-flex;width: 30%;background-color: black;} */
 
     .active-nav-item{color: #870085 !important}
+
+    
+  .responsive--card-labels~p{font-size: 16px;
+    border-radius: 6px;
+    padding: 6.5px 9px;
+    color: white;
+    background-color: #A07FB5;
+    width: 100%;}
+    .child-sponsorship-box >div:not(:first-of-type):nth-of-type(odd){background-color: white;}
   }
 
   @media screen and (max-width:992px) {
@@ -438,16 +450,8 @@
 
       /* Ok */
       .sponsorship-tables-group{flex-direction: column;}
-      .maid-hiring-cost-sec h3{      
-        padding-block: 1rem 2rem;
-        padding-inline: 1rem;
-        text-align: center;
-        background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 9.5px );
-        -webkit-backdrop-filter: blur( 9.5px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );}
+      .maid-hiring-cost-sec h3{ padding-block: 1rem 2rem;padding-inline: 1rem;text-align: center;background: rgba( 255, 255, 255, 0.25 );box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );backdrop-filter: blur( 9.5px );-webkit-backdrop-filter: blur( 9.5px );border-radius: 10px;border: 1px solid rgba( 255, 255, 255, 0.18 );}
+     .first-blank-row ~ div:not(.table-box--headers),  .first-blank-row ~ div{padding-inline: 40px;}
   }
   @media screen and (max-width:575px) {
     .contact-form{margin-bottom: 3rem;}

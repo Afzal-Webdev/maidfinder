@@ -828,11 +828,18 @@ article.maid-online {
 .testimonial-arrow-controls .glide__arrow--left {
   display: none;
 }
+.testimonial-arrow-controls.steps-arrow-controls .glide__arrow--left{ display: block;}
 
 .testimonial-arrow-controls .glide__arrow--right {
   padding: 0%;
   right: -4.2rem;
 }
+.testimonial-arrow-controls.steps-arrow-controls :is(.glide__arrow--left,.glide__arrow--right){border: unset; padding: 0%;}
+
+.steps-nav-controls .glide__bullet--active{background-color: #A07FB5;}
+
+/* .steps-arrow-controls */
+
 
 .faq-links {
   display: flex;
@@ -970,6 +977,8 @@ article.maid-online {
 .be-notified>p {
   margin-block: 24px 36px;
   color: #FFFFFF;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .lp-sc10 {
@@ -978,8 +987,9 @@ article.maid-online {
 
 .notify-form .input-group .form-control {
 
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-inline: 22px;
 
 }
 
@@ -2267,7 +2277,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Tables Modification */
 /* flex-wrap: wrap; */
 .sponsorship-tables-group{gap: 16px;}
-.sponsorship-table-box{    border: 0.75px solid #D6D6D6;border-radius: 20px;width: 100%;flex-basis: 24.1%;flex-grow: 1;}
+.sponsorship-table-box{    border: 0.75px solid #D6D6D6;border-radius: 20px;width: 100%;flex-basis: 24.1%;flex-grow: 1;background-color: white;}
 .first-blank-row{height: 20px;background-color: #747373;border-radius: 20px 20px 0px 0px;}
 .last-blank-row{height: 39px;background-color: #747373;border-radius: 0px 0px 20px 20px;}
 .table-box--headers{padding-block:35px 97px;padding-inline: 40px;}
@@ -2371,11 +2381,13 @@ input[type="number"]::-webkit-inner-spin-button {
 .txt-blocks-anywhere h3{font-size: 30px;line-height: 30px;color: #242C42;margin-bottom: 22px;}
 .txt-blocks-anywhere p{font-size:16px;line-height:30px;color:#919191;}
 
-.responsive--card-labels{
-  display: none;
-  position: absolute;
-  top: -0.7rem;
-  background: rgba(160,127,181,0.7);
-  padding-inline: 1rem;
-  color: white;
-  border-radius: 1rem;}
+.responsive--card-labels{display: none;padding-inline: 1rem;margin-bottom: 2px;color: #545454;border-radius: 1rem;font-size: 12px;line-height: 14px;}
+/*  */
+
+.three-steps-sec {justify-content: space-between;margin-bottom: 140px;}
+.three-steps-sec figure.img-slideshow{
+  width: 25%;
+}
+.three-steps-sec section.lp-sc2--cards{
+  width: 55%;
+}
