@@ -1073,11 +1073,11 @@ article.maid-online {
 .testimony-card:hover::before{
   transform: rotate(90deg);
   transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
-  animation: moveit 5s infinite alternate;
+  animation: moveit 3s infinite alternate;
   
 }
 @keyframes moveit{
-  to{transform: translateX(500px) rotate(90deg); ;opacity: 0;}
+  to{transform: translateX(300px) rotate(90deg); ;opacity: 0;}
 }
 
 /* .subs-email input {
