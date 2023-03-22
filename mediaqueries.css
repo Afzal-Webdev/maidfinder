@@ -18,6 +18,7 @@
   @media screen and (max-width: 1450px){
     .testimony-card{max-width: 580px;}
     .testimonial-arrow-controls .glide__arrow--right{right: 2rem;}
+    .testimonial-arrow-controls.steps-arrow-controls .glide__arrow--right{right: -4rem;}
     /* .faq-container{margin-inline: 100px;} */
     .lp-sc8{padding-inline: 81px;}
     .faq-container{padding: 40px 53px 44px 45px;}
@@ -26,6 +27,7 @@
     .table-box--headers>p:first-of-type{font-size: 18px;line-height: 24px;}
     .table-box--headers{padding-inline: 18px;}
     .first-blank-row ~ div:not(.table-box--headers){padding-inline: 18px;}
+    .lp-sc6 {max-width: 100%;}
 
   }
   
@@ -33,6 +35,8 @@
     
     .maid-profile__view-details {padding: 17px 39px 20px;}
     .maid-profile__hire-now{padding:17px 42px 20px;}
+    .why-customers-sec__img{max-width: 350px;width: 100%;}
+ 
  
   }
 
@@ -47,7 +51,7 @@
     .hero-searchMaids{max-width: 350px;margin-inline: auto;}
     header h2.section-heading{font-size: 50px;}
     section.lp-sc2{padding-inline: 81px;}
-    .maid-available{padding-block: 25px;}
+    .maid-available{padding: 25px;}
     .maid-online a.search-link{font-size: 16px;letter-spacing: 0.48px;line-height: 18px;padding: 8px 51px 9px 52px ;max-width: 226px;}
     .maid-online p{margin-block: 20px 36px;font-size: 18px;}
     .maid-online{padding: 25px 22px 25px 25px;}
@@ -97,7 +101,7 @@
     .get-the-job a{padding: 14px 27px;font-size: 20px;line-height: 23px;}
     .lp-sc7{padding-block: 80px 90px;}
     .lp-sc7>header{margin-block:unset;margin-bottom: 37px;}
-    .testimonial-arrow-controls .glide__arrow--right{display: none;}
+    .testimonial-arrow-controls .glide__arrow--right:not(.testimonial-arrow-controls.steps-arrow-controls .glide__arrow--right){display: none;}
     .testimony-card{padding:39px 40px 40px}
     .lp-sc7{padding-inline:81px ;}
     .lp-sc8{padding-block:80px 90px;padding-inline: 81px;}
@@ -136,7 +140,12 @@
     .reg-modal-body__rit:has(.login-form){padding-inline: 56px;}
     :is(#registration-modal, #login-modal) .modal-dialog{margin-inline: auto;}
 
- 
+    .three-steps-sec{flex-direction: column;}
+
+    .testimonial-arrow-controls.steps-arrow-controls .glide__arrow--right{right: 2rem;}
+
+    article.maid-online,.maid-available{margin-inline: auto;}
+    .glide__bullets.steps-nav-controls {bottom: 3em;} 
 
   }
 
@@ -144,7 +153,7 @@
     .resourcesCards .about-img-box{background-color: unset;border: none;}
     .maid-profile__pic{max-width: 38%;}
     .maid-profile__details{max-width: 62%;}
-
+    header h3.card-header,.maid-available header h3{font-size: 28px;}
   }
 
   @media screen and (max-width: 1050px){
@@ -163,6 +172,7 @@
     .first-blank-row ~ div:not(.table-box--headers){padding-block: 0px 6px;}
     .box--headers__extra-info {font-size: 12px;}
     .tr{height: auto;}
+   
 
     /* .first-blank-row ~ div:not(.table-box--headers){margin-bottom: 6px;} */
 
@@ -297,7 +307,7 @@
 
     .trustee-facts article{max-width: 100%;flex-basis: unset;}
     .lp-sc4 .section--wrapper{padding-inline: 20px;}
-    .lp-sc4 header h2{margin-block: 40px 26px;font-size: 20pt;}
+    .lp-sc4 header h2{margin-block: 40px 26px;font-size: 24px;}
     .reasons__why-cards{margin-left: 0px;}
     .why-card p{font-weight: 500;}
     .lp-sc4__reasons{margin-bottom: 44px;}
@@ -452,8 +462,12 @@
       .sponsorship-tables-group{flex-direction: column;}
       .maid-hiring-cost-sec h3{ padding-block: 1rem 2rem;padding-inline: 1rem;text-align: center;background: rgba( 255, 255, 255, 0.25 );box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );backdrop-filter: blur( 9.5px );-webkit-backdrop-filter: blur( 9.5px );border-radius: 10px;border: 1px solid rgba( 255, 255, 255, 0.18 );}
      .first-blank-row ~ div:not(.table-box--headers),  .first-blank-row ~ div{padding-inline: 40px;}
+     .testimonial-arrow-controls.steps-arrow-controls :is(.glide__arrow--left,.glide__arrow--right){top: 12rem;}
+     .three-steps-sec{margin-bottom: 80px;}
+     
   }
   @media screen and (max-width:575px) {
+    .testimonial-arrow-controls.steps-arrow-controls :is(.glide__arrow--left,.glide__arrow--right){top: 8rem;}
     .contact-form{margin-bottom: 3rem;}
     .contact-form .form-control{padding: 12px;}
     .contact-form button[type="submit"]{padding: 10px 40px;}
