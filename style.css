@@ -993,8 +993,8 @@ article.maid-online {
 
 .notify-form .input-group .form-control {
 
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding-inline: 22px;
 
 }

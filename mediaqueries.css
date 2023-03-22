@@ -282,7 +282,7 @@
     .lp-form .nice-select{margin-block:12px ;}
 
 
-    .lp-form .input-group button{display: none;}
+    /* .lp-form .input-group button{display: none;} */
     .lp-form .nice-select:first-of-type{border-radius: 5pt 0px 0px 5pt;}
     .lp-form  :is(.input-group, input){border-radius: 0 5pt 5pt 0}
 
@@ -329,7 +329,7 @@
     .get-the-job a{margin-inline: auto;font-size: 14pt;padding: 12px 22px;}
     .lp-sc7{padding-inline: 20px;padding-block: 40px;}
     .lp-sc7>header{margin-bottom: 20px;}
-    :is(.lp-sc7,.lp-sc8) header h2.section-heading{font-size: 26px;line-height: 23px;}
+    :is(.lp-sc7,.lp-sc8) header h2.section-heading{font-size: 26px;line-height: 26px;}
     .faq-links a{font-size: 13pt;line-height: 16px;font-weight: 500;}
     .faq-links a:first-of-type{width: 20%;}
     .faq-links a:last-of-type{width: 80%;}
@@ -464,6 +464,7 @@
      .first-blank-row ~ div:not(.table-box--headers),  .first-blank-row ~ div{padding-inline: 40px;}
      .testimonial-arrow-controls.steps-arrow-controls :is(.glide__arrow--left,.glide__arrow--right){top: 12rem;}
      .three-steps-sec{margin-bottom: 80px;}
+     .lp-form.notify-form .input-group button{border-radius: 0% 5px 5px 0%;}
      
   }
   @media screen and (max-width:575px) {
@@ -528,6 +529,7 @@
     
   .profile-modal--cover>img:first-of-type{height: 50%;}
   .swipe-blog-posts{ flex-direction: column;gap: 1rem;margin-block:30px 20px;}
+  .lp-form.notify-form .input-group{padding-block: 0px;}
  
   }
 
