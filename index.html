@@ -48,6 +48,8 @@
   <link rel="stylesheet" href="wp.css" />
   <link rel="stylesheet" href="mediaqueries.css?v=0.3.2" />
   <script src="index.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -106,6 +108,7 @@
   </section>
 
   <!-- Section 2 -->
+
   <section class="lp-sc2">
     <header>
       <h2 class="section-heading" data-aos="flip-down">
@@ -113,154 +116,146 @@
       </h2>
     </header>
 
-    <!-- Applying Slider Here -->
+    <section class="d-flex three-steps-sec ">
+      <figure data-aos="zoom-in" class=" image-slideshow">
+        <img src="images/simple-3-steps--1.png" alt="Simple 3 Steps Process to find a Maid"
+          usemap="#image_map"  id="steps-img" />
+          <map name="image_map" id="steps_img">
+            <area alt="Search Maids" title="Search Maids" href="#" coords="267,98,80" shape="circle" data-map="searching" onclick="mapping()">
+            <area alt="Hire- Maids" title="Hire Maids" href="#" coords="451,419,80" shape="circle" data-map="hiring" onclick="mapping()">
+            <area alt="Maid Trials" title="Trial Maids" href="#" coords="81,420,79" shape="circle" data-map="trials" onclick="mapping()">
+            <area alt="Register Maids" title="Miads' Registeration" href="#" coords="265,313,81" data-map="registeration" shape="circle" onclick="mapping()">
+          </map>
+      </figure>
 
-    <div class="glide glide-steps">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-          <li class="glide__slide ">
-            <section class="d-flex three-steps-sec ">
-              <figure data-aos="zoom-in" class=" image-slideshow">
-                <img src="images/simple-3-steps--1.png" alt="Simple 3 Steps Process to find a Maid" width="532px" height="500px" />
-              </figure>
-              <section class="lp-sc2--cards" data-aos="zooom-in">
-                <article class="maid-online" data-aos="fade-right">
-                  <header>
-                    <h3 class="card-header">Maid Nanny Online</h3>
-                  </header>
+      <!-- First -->
 
 
-                  <p>
-                    Search locally available maid / nanny profiles. Use filters to
-                    narrow down results based on your requirement.
-                  </p>
-                  <a class="d-block search-link" href="#">Maids / Nannies</a>
-                </article>
-                <article class="maid-available text-center" data-aos=" fade-right">
-                  <header>
-                    <h3>24,256 Maid/Nanny</h3>
-                  </header>
-                  <p>Available Here for You!</p>
-                </article>
-              </section>
-            </section>
-          </li>
+      <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="register-slide">
+        <article class="maid-online" data-aos="fade-right">
+          <header>
+            <h3 class="card-header">Maid Nanny Online</h3>
+          </header>
+          <p>
+            Search locally available maid / nanny profiles. Use filters to
+            narrow down results based on your requirement.
+          </p>
+          <a class="d-block search-link" href="#">Maids / Nannies</a>
+        </article>
+        <article class="maid-available text-center" data-aos=" fade-right">
+          <header>
+            <h3>24,256 Maid/Nanny</h3>
+          </header>
+          <p>Available Here for You!</p>
+        </article>
+      </section>
 
-          
-          <li class="glide__slide ">
-            <section class="d-flex  three-steps-sec justify-content-between">
-              <figure data-aos="zoom-in" class=" image-slideshow">
-                <img src="images/simple-3-steps--2.png" alt="Simple 3 Steps Process to find a Maid" width="532px"
-                  height="500px" />
+    <!-- Second -->
 
-              </figure>
-              <section class="lp-sc2--cards" data-aos="zooom-in">
-                <article class="maid-online" data-aos="fade-right">
-                  <header>
-                    <h3 class="card-header">Maid Nanny Online</h3>
-                  </header>
+      <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right"   id="search-slide">
+        <article class="maid-online" data-aos="fade-right">
+          <header>
+            <h3 class="card-header">Maid Nanny Online</h3>
+          </header>
+          <p>
+           Second
+          </p>
+          <a class="d-block search-link" href="#">Maids / Nannies</a>
+        </article>
+        <article class="maid-available text-center" data-aos=" fade-right">
+          <header>
+            <h3>24,256 Maid/Nanny</h3>
+          </header>
+          <p>Available Here for You!</p>
+        </article>
+      </section> 
 
+      <!-- third -->
 
-                  <p>
-                   2nd
-                  </p>
-                  <a class="d-block search-link" href="#">Maids / Nannies</a>
-                </article>
-                <article class="maid-available text-center" data-aos=" fade-right">
-                  <header>
-                    <h3>24,256 Maid/Nanny</h3>
-                  </header>
-                  <p>Available Here for You!</p>
-                </article>
-              </section>
-            </section>
-          </li>
-          <li class="glide__slide ">
-            <section class="d-flex  three-steps-sec justify-content-between" >
-              <figure data-aos="zoom-in" class=" image-slideshow">
+       <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right"   id="hire-slide">
+        <article class="maid-online" data-aos="fade-right">
+          <header>
+            <h3 class="card-header">Maid Nanny Online</h3>
+          </header>
+          <p>
+           Third
+          </p>
+          <a class="d-block search-link" href="#">Maids / Nannies</a>
+        </article>
+        <article class="maid-available text-center" data-aos=" fade-right">
+          <header>
+            <h3>24,256 Maid/Nanny</h3>
+          </header>
+          <p>Available Here for You!</p>
+        </article>
+      </section> 
 
-                <img src="images/simple-3-steps--3.png" alt="Simple 3 Steps Process to find a Maid" width="532px"
-                  height="500px" />
-
-              </figure>
-              <section class="lp-sc2--cards" data-aos="zooom-in">
-                <article class="maid-online" data-aos="fade-right">
-                  <header>
-                    <h3 class="card-header">Maid Nanny Online</h3>
-                  </header>
-
-
-                  <p>
-                 3rd
-                  </p>
-                  <a class="d-block search-link" href="#">Maids / Nannies</a>
-                </article>
-                <article class="maid-available text-center" data-aos=" fade-right">
-                  <header>
-                    <h3>24,256 Maid/Nanny</h3>
-                  </header>
-                  <p>Available Here for You!</p>
-                </article>
-              </section>
-            </section>
-          </li>
-          <li class="glide__slide ">
-            <section class="d-flex  three-steps-sec justify-content-between">
-              <figure data-aos="zoom-in" class=" image-slideshow">
-
-                <img src="images/simple-3-steps--4.png" alt="Simple 3 Steps Process to find a Maid" width="532px"
-                  height="500px" />
-              </figure>
-              <section class="lp-sc2--cards" data-aos="zooom-in">
-                <article class="maid-online" data-aos="fade-right">
-                  <header>
-                    <h3 class="card-header">Maid Nanny Online</h3>
-                  </header>
+      
+      <!-- Fourth -->
+ 
+       <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right"  id="trial-slide">
+        <article class="maid-online" data-aos="fade-right">
+          <header>
+            <h3 class="card-header">Maid Nanny Online</h3>
+          </header>
+          <p>
+            Fourth
+          </p>
+          <a class="d-block search-link" href="#">Maids / Nannies</a>
+        </article>
+        <article class="maid-available text-center" data-aos=" fade-right">
+          <header>
+            <h3>24,256 Maid/Nanny</h3>
+          </header>
+          <p>Available Here for You!</p>
+        </article>
+      </section>
 
 
-                  <p>
-                  4th
-                  </p>
-                  <a class="d-block search-link" href="#">Maids / Nannies</a>
-                </article>
-                <article class="maid-available text-center" data-aos=" fade-right">
-                  <header>
-                    <h3>24,256 Maid/Nanny</h3>
-                  </header>
-                  <p>Available Here for You!</p>
-                </article>
-              </section>
-            </section>
-          </li>
-        </ul>
-      </div>
-      <div class="glide__arrows testimonial-arrow-controls steps-arrow-controls" data-glide-el="controls">
+
+
+
+
+
+    </section>
+
+</section>
+
+
+
+
+
+      <!-- <div class="glide__arrows testimonial-arrow-controls steps-arrow-controls" data-glide-el="controls">
         <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" style="transform: rotate(180deg);">
             <g id="Group_2112" data-name="Group 2112" transform="translate(-613 -1957)">
-              <rect id="Rectangle_1091" data-name="Rectangle 1091" width="40" height="40" transform="translate(613 1957)" fill="#fff"></rect>
-              <path id="Path_2355" data-name="Path 2355" d="M8530.814,4775.322l8.073,8.074-8.073,8.073" transform="translate(-7900.314 -2806.822)" fill="none" stroke="#a07fb5" stroke-width="2"></path>
-              <!-- <path id="Path_2355" data-name="Path 2355" d="M7908.227,4783.396l-8.073,-8.074,8.073,-8.073" transform="translate(-7900.314 -2806.822)" fill="none" stroke="#a07fb5" stroke-width="2"></path> -->
+              <rect id="Rectangle_1091" data-name="Rectangle 1091" width="40" height="40"
+                transform="translate(613 1957)" fill="#fff"></rect>
+              <path id="Path_2355" data-name="Path 2355" d="M8530.814,4775.322l8.073,8.074-8.073,8.073"
+                transform="translate(-7900.314 -2806.822)" fill="none" stroke="#a07fb5" stroke-width="2"></path>
             </g>
           </svg>
         </button>
         <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
             <g id="Group_2112" data-name="Group 2112" transform="translate(-613 -1957)">
-              <rect id="Rectangle_1091" data-name="Rectangle 1091" width="40" height="40" transform="translate(613 1957)" fill="#fff"></rect>
-              <path id="Path_2355" data-name="Path 2355" d="M8530.814,4775.322l8.073,8.074-8.073,8.073" transform="translate(-7900.314 -2806.822)" fill="none" stroke="#a07fb5" stroke-width="2"></path>
+              <rect id="Rectangle_1091" data-name="Rectangle 1091" width="40" height="40"
+                transform="translate(613 1957)" fill="#fff"></rect>
+              <path id="Path_2355" data-name="Path 2355" d="M8530.814,4775.322l8.073,8.074-8.073,8.073"
+                transform="translate(-7900.314 -2806.822)" fill="none" stroke="#a07fb5" stroke-width="2"></path>
             </g>
           </svg>
         </button>
-      </div>
+      </div> -->
 
-      <div class="glide__bullets steps-nav-controls" data-glide-el="controls[nav]">
+      <!-- <div class="glide__bullets steps-nav-controls" data-glide-el="controls[nav]">
         <button class="glide__bullet" data-glide-dir="=0"></button>
         <button class="glide__bullet" data-glide-dir="=1"></button>
         <button class="glide__bullet" data-glide-dir="=2"></button>
         <button class="glide__bullet" data-glide-dir="=3"></button>
       </div>
     </div>
+  </section> -->
 
 
 
@@ -269,19 +264,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  </section>
   <!-- Section 3 [ Latest Profiles] -->
   <section class="lp-sc3">
     <header>
@@ -2839,6 +2821,68 @@
   </script>
 
 
+const section_first = document.getElementById("register-slide");
+const section_second = document.getElementById("search-slide");
+const section_third = document.getElementById("hire-slide");
+const section_fourth = document.getElementById("trial-slide");
+
+
+
+<script>
+  const map_img =  document.getElementById("steps-img");
+  let img_src = map_img.getAttribute("src");
+
+  let  slidecontent = document.getElementsByClassName("slideContent");
+    for (i = 0; i < slidecontent.length; i++) {
+    slidecontent[i+1].style.cssText = "display:none";
+    console.log(slidecontent[i])
+    }
+
+  console.log(img_src);
+  function mapping(){
+    event.preventDefault();
+    let route =    event.target.getAttribute('data-map');
+    let  slidecontent = document.getElementsByClassName("slideContent");
+    for (i = 0; i < slidecontent.length; i++) {
+    slidecontent[i].style.cssText = "opacity:0;visibility:hidden;height:0px;width:0px;";
+    console.log(slidecontent[i])
+    }
+
+
+console.log(route);
+    switch(route){
+    
+   case "registeration":
+    map_img.setAttribute("src","images/simple-3-steps--1.png");
+    slidecontent[0].style.cssText = "opacity:1;visibility:visible;height:auto;width:100%;";
+    break;
+    case "searching":
+    map_img.setAttribute("src","images/simple-3-steps--2.png");
+    slidecontent[1].style.cssText =  "opacity:1;visibility:visible;height:auto;width:100%;";
+    break;
+    case "hiring":
+    map_img.setAttribute("src","images/simple-3-steps--3.png");
+    slidecontent[2].style.cssText =  "opacity:1;visibility:visible;height:auto;width:100%;";
+    break;
+    case "trials":
+    map_img.setAttribute("src","images/simple-3-steps--4.png");
+    slidecontent[3].style.cssText =  "opacity:1;visibility:visible;height:auto;width:100%;";
+    break;
+    }
+    
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
 
   <script>
 
@@ -2953,7 +2997,11 @@
     window.scrollTo(0, 0)
   </script>
 
-
+<script>
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+</script>
 
 </body>
 
