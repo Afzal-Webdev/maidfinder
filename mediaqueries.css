@@ -228,8 +228,10 @@
     section.maids-hero,.resources-hero,.about-hero,.contact-hero,.packages-hero,.customer-reviews,.reviews-hero,.aboutCards,.faqs-hero{padding-inline: 20px;}
 
 
-    .pkg-card-headers{padding-bottom: 22px;}
-    .seconday-cards__li{margin-top: 28px;}
+    /* Access Packages */
+    section.__pkg--cards:nth-of-type(n)>article{padding-bottom: 22px;}
+    section.__pkg--cards:not(:nth-of-type(2))>ul{margin-top: 28px;}
+    
      /* Blogs */
      .blog-post-heading{margin-block: 15px;font-size: 22px;line-height: 25px;}
      .blog-post{padding: 30px 30px 44px;}
@@ -371,7 +373,7 @@
     .maid-profile.d-flex > :is(figure,article){display: inline-block;vertical-align: top;}
     .maid-profile>figure{width: 100%;max-width: 32%;}
     .maid-profile>article{max-width: 67.2%;width: 100%;}
-    .primary-cards__li li,.seconday-cards__li li{margin-bottom: 18px;}
+    section.__pkg--cards:nth-of-type(n)>ul>li{margin-bottom: 18px;}
 
   /* Contacts */
     .contact-card{max-width: 100%;}  
@@ -399,7 +401,7 @@
 
     /* Packages */
     .pkg-cards{flex-wrap: wrap;justify-content: center;}
-    .pkg-secondary-card,.pkg-primary-card{max-width: 100%;height: auto;}
+    section.__pkg--cards{max-width: 100%;height: auto;}
     .access-pkgs h3{font-size: 30px;line-height: 30px;}
     .access-pkgs{margin-bottom: 30px;}
     .access-pkgs-wrap{padding-block: 45px ;}
@@ -435,12 +437,12 @@
       .best-option p{font-size: 12px;line-height: 12px;}
 
       /*  Blog Post */
-      .blog-post-caption{font-size: 2rem;margin-block: 20px 16px;}
-      .blog-post-paras{margin-block:0px ;}
-      .blog-post-h3s{font-size: 18px;line-height: 30px;margin-block: 10px;}
-      .blog-post-pointers{margin-inline-start: 3.5rem;}
-      .blog-post-pointers li{      font-size: 16px;line-height: 30px;margin-bottom: 20px;}
-      .blog-post-h3s.nanny-care{padding-block: 10px;}
+      .blog-post-container>h2:first-of-type{font-size: 2rem;margin-block: 20px 16px;line-height: 40px;}
+      .blog-post-container p{margin-block:0px ;}
+      .blog-post-container h3{font-size: 18px;line-height: 30px;margin-block: 10px;}
+      .blog-post-container ul{margin-inline-start: 3.5rem;}
+      .blog-post-container>ul>li{      font-size: 16px;line-height: 30px;margin-bottom: 20px;}
+      .blog-post-container ul + h3{padding-block: 10px;}
 
       /* Login Card */
       .reg-modal-body__rit:has(.login-form){padding-inline: 2rem;}

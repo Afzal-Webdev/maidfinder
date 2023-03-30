@@ -49,7 +49,9 @@
   <link rel="stylesheet" href="mediaqueries.css?v=0.3.2" />
   <script src="index.js" defer></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"
+    integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -116,21 +118,205 @@
       </h2>
     </header>
 
+    
     <section class="d-flex three-steps-sec ">
-      <figure data-aos="zoom-in" class=" image-slideshow">
-        <img src="images/simple-3-steps--1.png" alt="Simple 3 Steps Process to find a Maid"
-          usemap="#image_map"  id="steps-img" />
-          <map name="image_map" id="steps_img">
-            <area alt="Search Maids" title="Search Maids" href="#" coords="267,98,80" shape="circle" data-map="searching" onclick="mapping()">
-            <area alt="Hire- Maids" title="Hire Maids" href="#" coords="451,419,80" shape="circle" data-map="hiring" onclick="mapping()">
-            <area alt="Maid Trials" title="Trial Maids" href="#" coords="81,420,79" shape="circle" data-map="trials" onclick="mapping()">
-            <area alt="Register Maids" title="Miads' Registeration" href="#" coords="265,313,81" data-map="registeration" shape="circle" onclick="mapping()">
-          </map>
-      </figure>
+ 
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-search-tab" data-bs-toggle="pill" data-bs-target="#v-pills-search"
+          type="button" role="tab" aria-controls="v-pills-search" aria-selected="true">
+          <!-- <img src="images/advance-search.svg" alt=""> -->
+          <svg xmlns="http://www.w3.org/2000/svg" id="MF-Icon-Search" width="54.688" height="54.43" viewBox="0 0 54.688 54.43">
+            <g id="Group_4839" data-name="Group 4839">
+              <g id="Group_4838" data-name="Group 4838">
+                <g id="Group_4835" data-name="Group 4835">
+                  <path id="Path_7001" data-name="Path 7001" d="M26.483,47.827A21.293,21.293,0,1,1,47.777,26.533,21.308,21.308,0,0,1,26.483,47.827Zm0-39.489a18.2,18.2,0,1,0,18.2,18.2A18.217,18.217,0,0,0,26.483,8.338Z" transform="translate(-5.19 -5.24)" fill="#fff"/>
+                </g>
+                <g id="Group_4836" data-name="Group 4836" transform="translate(6.977 6.977)">
+                  <path id="Path_7002" data-name="Path 7002" d="M10.816,22.057H7.69A14.328,14.328,0,0,1,22.007,7.74v3.1A11.214,11.214,0,0,0,10.816,22.057Z" transform="translate(-7.69 -7.74)" fill="#fff"/>
+                </g>
+                <g id="Group_4837" data-name="Group 4837" transform="translate(32.048 31.797)">
+                  <path id="Path_7003" data-name="Path 7003" d="M34.617,39.293a4.59,4.59,0,0,1-3.209-1.312L16.7,23.274l2.2-2.2L33.612,35.777a1.415,1.415,0,0,0,2.009,0l.2-.2a1.415,1.415,0,0,0,0-2.009L21.109,18.865l2.2-2.2L38.021,31.367a4.565,4.565,0,0,1,0,6.419l-.2.2A4.639,4.639,0,0,1,34.617,39.293Z" transform="translate(-16.7 -16.66)" fill="#fff"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+          Search</button>
+        <button class="nav-link" id="v-pills-hire-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hire"
+          type="button" role="tab" aria-controls="v-pills-hire" aria-selected="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="70.896" height="55.804" viewBox="0 0 70.896 55.804">
+            <path id="Path_7012" data-name="Path 7012" d="M19.294,17.426l1.447,1.447-.908,2.043.709,1.418a8.921,8.921,0,0,0,8.029,4.993,7.433,7.433,0,0,0,.794-.028l9.816-.851,16.6,16.6a2.089,2.089,0,0,1,0,2.922l-.284.284a2.089,2.089,0,0,1-2.922,0l-1.589-1.589h0l-7.4-7.4-2.213,2.213,7.4,7.4h0a2.072,2.072,0,0,1,0,2.95l-.284.284a2.034,2.034,0,0,1-1.475.6h0a2.06,2.06,0,0,1-1.475-.624l-1.844-1.844h0l-5.561-5.561-2.213,2.213,5.56,5.56a2.089,2.089,0,0,1,0,2.922l-.284.284a2.06,2.06,0,0,1-1.475.624h0a2.21,2.21,0,0,1-1.475-.6L36.8,52.236l.028-.028-4.114-4.114L30.5,50.306l3.716,3.716-.028.028a2.072,2.072,0,0,1,0,2.95l-.284.284a2.124,2.124,0,0,1-2.95,0l-2.3-2.3.284-.284h0a4.794,4.794,0,0,0,0-6.78l-.17-.17a4.68,4.68,0,0,0-3.206-1.333,4.61,4.61,0,0,0-1.39-3.234l-.17-.17A4.68,4.68,0,0,0,20.8,41.682a4.661,4.661,0,0,0-1.39-3.234l-.085-.284a4.68,4.68,0,0,0-3.206-1.333,4.61,4.61,0,0,0-1.39-3.234l-.17-.17a4.949,4.949,0,0,0-5.674-.794,6.218,6.218,0,0,0-1.163-1.56l-.936-.936L4.57,32.348l.936.936a3.29,3.29,0,0,1,.851,1.532l-.851.851a4.418,4.418,0,0,0,0,6.213l1.7,1.7a2.742,2.742,0,0,0,1.362.766,2.973,2.973,0,0,0,.738,1.333l2.667,2.667a2.742,2.742,0,0,0,1.362.766,2.973,2.973,0,0,0,.738,1.333l2.667,2.667a3.065,3.065,0,0,0,1.362.738,2.922,2.922,0,0,0,.738,1.362l1.7,1.7a4.4,4.4,0,0,0,3.121,1.277A4.322,4.322,0,0,0,26.5,57.115l2.326,2.326a5.137,5.137,0,0,0,7.319,0l.284-.284a5.119,5.119,0,0,0,1.305-2.184,5.312,5.312,0,0,0,2.014.4h0a5.06,5.06,0,0,0,3.66-1.532l.284-.284A5.119,5.119,0,0,0,45,53.37a5.183,5.183,0,0,0,5.674-1.106l.284-.284a5.208,5.208,0,0,0,1.333-2.326,5.332,5.332,0,0,0,5.39-1.22l.284-.284a5.182,5.182,0,0,0,.2-7.092,18.475,18.475,0,0,0,3.489-3.489,23.854,23.854,0,0,0,2.894-5.617l.482.482H67.24l7.887-7.887V22.334L57.963,5.17H55.778l-7.887,7.887V15.27l.965.965-1.447.6a3.916,3.916,0,0,1-2.837-.028l-2.979-1.163a13.817,13.817,0,0,0-8.88-.4l-8.653,2.525-2.582-2.582ZM7.748,37.852l2.241-2.241a1.713,1.713,0,0,1,2.383,0l.17.17a1.7,1.7,0,0,1,0,2.383L9.393,41.313,7.748,39.668A1.267,1.267,0,0,1,7.748,37.852Zm3.8,5.7,3.177-3.177a1.649,1.649,0,0,1,1.192-.482,1.774,1.774,0,0,1,1.192.482l.17.17a1.7,1.7,0,0,1,0,2.383l-3.149,3.149Zm4.766,4.766,3.177-3.177a1.649,1.649,0,0,1,1.192-.482,1.722,1.722,0,0,1,1.192.482l.17.17a1.7,1.7,0,0,1,0,2.383h0L18.9,50.846Zm6.44,6.355-1.7-1.617,3.177-3.177h0a1.713,1.713,0,0,1,2.383,0l.17.17a1.7,1.7,0,0,1,0,2.383l-2.241,2.241A1.234,1.234,0,0,1,22.756,54.675ZM56.884,8.518,71.835,23.469l-5.7,5.7L51.182,14.22Zm-23.32,9.731a10.746,10.746,0,0,1,6.866.312l2.979,1.163a6.972,6.972,0,0,0,5.078.028l2.865-.993L62.1,29.511A16.72,16.72,0,0,1,59.182,35.7a15.908,15.908,0,0,1-3.234,3.092L40.912,23.752a1.346,1.346,0,0,0-1.05-.511.668.668,0,0,0-.227.057V23.27l-10.554.908A5.807,5.807,0,0,1,23.465,21.2Z" transform="translate(-4.23 -5.17)" fill="#fff"/>
+          </svg>
+
+          <span class="position-absolute hire-outward-arrow">
+            <img src="images/process-arrow.png" alt="">
+          </span>
+          <!-- <img src="images/advance-search.svg" alt=""> -->
+          Hire</button>
+
+        <button class="nav-link" id="v-pills-trial-tab" data-bs-toggle="pill" data-bs-target="#v-pills-trial"
+          type="button" role="tab" aria-controls="v-pills-trial" aria-selected="false">
+          <!-- <img src="images/advance-search.svg" alt=""> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+            <g id="Group_5803" data-name="Group 5803" transform="translate(1543 -14056)">
+              <g id="Group_4843" data-name="Group 4843" transform="translate(-1542.786 14056.071)">
+                <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(-0.214 -0.071)" fill="#a07fb5" stroke="#fff" stroke-width="3.5">
+                  <circle cx="19" cy="19" r="19" stroke="none"/>
+                  <circle cx="19" cy="19" r="17.25" fill="none"/>
+                </g>
+                <g id="Group_4842" data-name="Group 4842" transform="translate(11.607 11.607)">
+                  <line id="Line_1" data-name="Line 1" x1="14" y2="14" transform="translate(0.179 0.321)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.5"/>
+                  <line id="Line_2" data-name="Line 2" x2="14" y2="14" transform="translate(0.179 0.321)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.5"/>
+                </g>
+              </g>
+              <g id="Group_4845" data-name="Group 4845" transform="translate(-1520.464 14079.285)">
+                <g id="Ellipse_10-2" data-name="Ellipse 10" transform="translate(0.464 -0.285)" fill="#a07fb5" stroke="#fff" stroke-width="3.5">
+                  <circle cx="20.5" cy="20.5" r="20.5" stroke="none"/>
+                  <circle cx="20.5" cy="20.5" r="18.75" fill="none"/>
+                </g>
+                <g id="Group_4844" data-name="Group 4844" transform="translate(9.821 14.286)">
+                  <line id="Line_1-2" data-name="Line 1" x1="14" y2="14" transform="translate(7.642 0.429)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.5"/>
+                  <line id="Line_2-2" data-name="Line 2" x2="8" y2="8" transform="translate(-0.358 6.429)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.5"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <span class="position-absolute trial-outward-arrow">
+            <img src="images/process-arrow.png" alt="">
+          </span>
+          Trial
+        </button>
+        <button class="nav-link" id="v-pills-register-tab" data-bs-toggle="pill" data-bs-target="#v-pills-register"
+          type="button" role="tab" aria-controls="v-pills-register" aria-selected="false">
+          <!-- <img src="images/advance-search.svg" alt=""> -->
+          <svg xmlns="http://www.w3.org/2000/svg" id="Group_5036" data-name="Group 5036" width="80.405" height="55.804" viewBox="0 0 80.405 55.804">
+            <g id="Group_4840" data-name="Group 4840" transform="translate(0 4.499)">
+              <path id="Path_7004" data-name="Path 7004" d="M11.553,18.64h-2a1.44,1.44,0,1,0,0,2.88h2a1.456,1.456,0,0,0,1.44-1.44A1.436,1.436,0,0,0,11.553,18.64Z" transform="translate(10.014 13.664)" fill="#fff"/>
+              <path id="Path_7005" data-name="Path 7005" d="M12.01,25.348a12.039,12.039,0,0,0,5.071-1.127,9.3,9.3,0,0,1,8.013,0,12.418,12.418,0,0,0,5.04,1.1,6.48,6.48,0,1,0,0-12.959,6.117,6.117,0,0,0-2.254.407,7.461,7.461,0,0,0-13.648,0,7.342,7.342,0,0,0-2.222-.344,6.464,6.464,0,1,0,0,12.928Zm0-10.079a3.7,3.7,0,0,1,2.222.783,1.437,1.437,0,0,0,1.409.219,1.42,1.42,0,0,0,.876-1.127,4.582,4.582,0,0,1,4.539-3.913,4.667,4.667,0,0,1,4.57,3.913,1.42,1.42,0,0,0,.876,1.127,1.437,1.437,0,0,0,1.409-.219,3.6,3.6,0,1,1,2.222,6.417,9.586,9.586,0,0,1-4.007-.908,12.417,12.417,0,0,0-5.04-1.1,12.039,12.039,0,0,0-5.071,1.127,9.586,9.586,0,0,1-4.007.908,3.6,3.6,0,0,1-3.6-3.6A3.648,3.648,0,0,1,12.01,15.269Z" transform="translate(4.518 -8.32)" fill="#fff"/>
+              <path id="Path_7006" data-name="Path 7006" d="M15.843,47.771H8.768a3.6,3.6,0,0,1-3.6-3.6,7.659,7.659,0,0,1,1.878-5.259,8.958,8.958,0,0,0,2.16-5.822V25.045a18.85,18.85,0,0,1,2.786-10.3,1.418,1.418,0,0,0,.219-1.064,1.323,1.323,0,0,0-.626-.908,1.447,1.447,0,0,0-1.064-.219,1.385,1.385,0,0,0-.908.595A21.612,21.612,0,0,0,6.358,25.014v8.045a6.074,6.074,0,0,1-1.6,4.132A10.424,10.424,0,0,0,2.32,44.14a6.493,6.493,0,0,0,6.48,6.48h7.043a1.424,1.424,0,1,0,0-2.849Z" transform="translate(-2.32 0.654)" fill="#fff"/>
+              <path id="Path_7007" data-name="Path 7007" d="M36.613,30.306V22.261a1.436,1.436,0,0,0-1.44-1.44H27.129a4.609,4.609,0,0,1-4.6-4.6,1.44,1.44,0,0,0-2.88,0,4.609,4.609,0,0,1-4.6,4.6H6.97a1.456,1.456,0,0,0-1.44,1.44v8.045a15.542,15.542,0,0,0,31.083,0ZM33.765,23.67v6.636a12.677,12.677,0,0,1-25.355,0V23.67h6.636a7.446,7.446,0,0,0,6.041-3.1,7.576,7.576,0,0,0,6.041,3.1h6.636Z" transform="translate(4.518 5.441)" fill="#fff"/>
+              <path id="Path_7008" data-name="Path 7008" d="M12.77,18.64a1.44,1.44,0,1,0,0,2.88h2a1.456,1.456,0,0,0,1.44-1.44,1.436,1.436,0,0,0-1.44-1.44Z" transform="translate(16.873 13.664)" fill="#fff"/>
+              <path id="Path_7009" data-name="Path 7009" d="M26.4,37.222a6.074,6.074,0,0,1-1.6-4.132V25.045a21.537,21.537,0,0,0-3.255-11.864,1.556,1.556,0,0,0-.908-.626,1.418,1.418,0,0,0-1.064.219,1.556,1.556,0,0,0-.626.908,1.418,1.418,0,0,0,.219,1.064,18.85,18.85,0,0,1,2.786,10.3V33.09a8.958,8.958,0,0,0,2.16,5.822,7.659,7.659,0,0,1,1.878,5.259,3.6,3.6,0,0,1-3.6,3.6H15.35a1.44,1.44,0,1,0,0,2.88h7.043a6.493,6.493,0,0,0,6.48-6.48A10.353,10.353,0,0,0,26.4,37.222Z" transform="translate(22.369 0.654)" fill="#fff"/>
+            </g>
+            <g id="Path_7010" data-name="Path 7010" transform="translate(32.03 -5.3)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18.481,32.94l1.127,2.692H33.193a15.139,15.139,0,1,0-11.832-5.6Z" stroke="none"/>
+              <path d="M 33.19293594360352 32.63196182250977 C 39.90991592407227 32.63196182250977 45.37457275390625 27.16730117797852 45.37457275390625 20.45033073425293 C 45.37457275390625 17.20141983032227 44.10464477539062 14.14945030212402 41.79872512817383 11.85664081573486 C 39.49208450317383 9.563100814819336 36.42470550537109 8.300000190734863 33.16162490844727 8.300000190734863 C 29.90564346313477 8.300000190734863 26.84598350524902 9.566520690917969 24.54624366760254 11.86625099182129 C 22.24651336669922 14.16599082946777 20.97999382019043 17.22566032409668 20.97999382019043 20.48163986206055 C 20.97999382019043 23.31254005432129 21.91617393493652 25.95903968811035 23.68733406066895 28.13503074645996 C 24.65453338623047 29.32330131530762 24.57092475891113 31.0494499206543 23.49340438842773 32.13867950439453 L 23.00542640686035 32.63196182250977 L 33.19293594360352 32.63196182250977 M 33.19293594360352 35.63196182250977 L 19.60772514343262 35.63196182250977 L 18.4808349609375 32.93996047973633 L 21.36065483093262 30.02885055541992 C 19.16948509216309 27.33685111999512 17.97999382019043 23.98748970031738 17.97999382019043 20.48163986206055 C 17.97999382019043 12.09261035919189 24.77260398864746 5.300000667572021 33.16162490844727 5.300000667572021 C 41.55066299438477 5.300000667572021 48.37457275390625 12.06130027770996 48.37457275390625 20.45033073425293 C 48.37457275390625 28.8393611907959 41.55066299438477 35.63196182250977 33.19293594360352 35.63196182250977 Z" stroke="none" fill="#fff"/>
+            </g>
+            <g id="Path_7011" data-name="Path 7011" transform="translate(34.66 17.721)" fill="none">
+              <path d="M31.253,16.76a10.643,10.643,0,0,0,0,21.286h9.579l.751-1.816-2.1-2.1A10.632,10.632,0,0,0,31.253,16.76Z" stroke="none"/>
+              <path d="M 31.25278282165527 19.75999069213867 C 27.03854370117188 19.75999069213867 23.61000061035156 23.18854141235352 23.61000061035156 27.40279006958008 C 23.61000061035156 31.61703109741211 27.03854370117188 35.04557037353516 31.25278282165527 35.04557037353516 L 36.15545272827148 35.04557037353516 L 35.44248962402344 34.33261108398438 L 37.16513061523438 32.23099136352539 C 38.29720306396484 30.8498706817627 38.89558410644531 29.18029975891113 38.89558410644531 27.40279006958008 C 38.89558410644531 23.18854141235352 35.46703338623047 19.75999069213867 31.25278282165527 19.75999069213867 M 31.25278282165527 16.75999069213867 C 37.1063232421875 16.75999069213867 41.89558410644531 21.51795196533203 41.89558410644531 27.40279006958008 C 41.89558410644531 29.87567138671875 41.05042266845703 32.22334289550781 39.48530197143555 34.13278198242188 L 41.58256149291992 36.23004150390625 L 40.83130264282227 38.04557037353516 L 31.25278282165527 38.04557037353516 C 25.39925384521484 38.04557037353516 20.61000061035156 33.28762054443359 20.61000061035156 27.40279006958008 C 20.61000061035156 21.54925155639648 25.36796188354492 16.75999069213867 31.25278282165527 16.75999069213867 Z" stroke="none" fill="#fff"/>
+            </g>
+          </svg>
+          Register</button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-search" role="tabpanel" aria-labelledby="v-pills-search-tab"
+          tabindex="0">
+          <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="register-slide">
+            <article class="maid-online" data-aos="fade-right">
+              <header>
+                <h3 class="card-header">Maid Nanny Online</h3>
+              </header>
+              <p>
+                Search locally available maid / nanny profiles. Use filters to
+                narrow down results based on your requirement.
+              </p>
+              <a class="d-block search-link" href="#">Maids / Nannies</a>
+            </article>
+            <article class="maid-available text-center" data-aos=" fade-right">
+              <header>
+                <h3>24,256 Maid/Nanny</h3>
+              </header>
+              <p>Available Here for You!</p>
+            </article>
+          </section>
+        </div>
+        <div class="tab-pane fade" id="v-pills-hire" role="tabpanel" aria-labelledby="v-pills-hire-tab"
+          tabindex="0">
+          <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="register-slide">
+            <article class="maid-online" data-aos="fade-right">
+              <header>
+                <h3 class="card-header">Maid Nanny Online</h3>
+              </header>
+              <p>
+                Search locally available maid / nanny profiles. Use filters to
+                narrow down results based on your requirement.
+              </p>
+              <a class="d-block search-link" href="#">Maids / Nannies</a>
+            </article>
+            <article class="maid-available text-center" data-aos=" fade-right">
+              <header>
+                <h3>24,256 Maid/Nanny</h3>
+              </header>
+              <p>Available Here for You!</p>
+            </article>
+          </section>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-trial" role="tabpanel" aria-labelledby="v-pills-trial-tab"
+          tabindex="0">
+          <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="register-slide">
+            <article class="maid-online" data-aos="fade-right">
+              <header>
+                <h3 class="card-header">Maid Nanny Third</h3>
+              </header>
+              <p>
+                Use filters to narrow down results based on your requirement.
+              </p>
+              <a class="d-block search-link" href="#">Maids / Nannies</a>
+            </article>
+            <article class="maid-available text-center" data-aos=" fade-right">
+              <header>
+                <h3>24,256 Maid/Nanny</h3>
+              </header>
+              <p>Available Here for You!</p>
+            </article>
+          </section>
+        </div>
+        <div class="tab-pane fade" id="v-pills-register" role="tabpanel" aria-labelledby="v-pills-register-tab"
+          tabindex="0">
+          <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="register-slide">
+            <article class="maid-online" data-aos="fade-right">
+              <header>
+                <h3 class="card-header">Maid Nanny Fourth</h3>
+              </header>
+              <p>
+                Search locally available maid / nanny profiles. Use filters to
+                narrow down results based on your requirement. Use filters to narrow down results based on your requirement.
+              </p>
+              <a class="d-block search-link" href="#">Maids / Nannies</a>
+            </article>
+            <article class="maid-available text-center" data-aos=" fade-right">
+              <header>
+                <h3>24,256 Maid/Nanny</h3>
+              </header>
+              <p>Available Here for You!</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    
+    </section>
+
+    <section class="d-flex three-steps-sec ">
+      <!-- Image Slide -->
+      <!-- <figure data-aos="zoom-in" class=" image-slideshow">
+        <img src="images/simple-3-steps--1.png" alt="Simple 3 Steps Process to find a Maid" usemap="#image_map"
+          id="steps-img" />
+        <map name="image_map" id="steps_img">
+          <area alt="Search Maids" title="Search Maids" href="#" coords="267,98,80" shape="circle" data-map="searching"
+            onclick="mapping()">
+          <area alt="Hire- Maids" title="Hire Maids" href="#" coords="451,419,80" shape="circle" data-map="hiring"
+            onclick="mapping()">
+          <area alt="Maid Trials" title="Trial Maids" href="#" coords="81,420,79" shape="circle" data-map="trials"
+            onclick="mapping()">
+          <area alt="Register Maids" title="Miads' Registeration" href="#" coords="265,313,81" data-map="registeration"
+            shape="circle" onclick="mapping()">
+        </map>
+      </figure> -->
 
       <!-- First -->
 
-
+<!-- 
       <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="register-slide">
         <article class="maid-online" data-aos="fade-right">
           <header>
@@ -148,17 +334,17 @@
           </header>
           <p>Available Here for You!</p>
         </article>
-      </section>
+      </section> -->
 
-    <!-- Second -->
+      <!-- Second -->
 
-      <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right"   id="search-slide">
+      <!-- <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="search-slide">
         <article class="maid-online" data-aos="fade-right">
           <header>
             <h3 class="card-header">Maid Nanny Online</h3>
           </header>
           <p>
-           Second
+            Second
           </p>
           <a class="d-block search-link" href="#">Maids / Nannies</a>
         </article>
@@ -168,17 +354,17 @@
           </header>
           <p>Available Here for You!</p>
         </article>
-      </section> 
+      </section> -->
 
       <!-- third -->
 
-       <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right"   id="hire-slide">
+      <!-- <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="hire-slide">
         <article class="maid-online" data-aos="fade-right">
           <header>
             <h3 class="card-header">Maid Nanny Online</h3>
           </header>
           <p>
-           Third
+            Third
           </p>
           <a class="d-block search-link" href="#">Maids / Nannies</a>
         </article>
@@ -188,12 +374,12 @@
           </header>
           <p>Available Here for You!</p>
         </article>
-      </section> 
+      </section> -->
 
-      
+
       <!-- Fourth -->
- 
-       <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right"  id="trial-slide">
+
+      <!-- <section class="lp-sc2--cards slideContent" data-aos="zoom-in-right" id="trial-slide">
         <article class="maid-online" data-aos="fade-right">
           <header>
             <h3 class="card-header">Maid Nanny Online</h3>
@@ -209,7 +395,7 @@
           </header>
           <p>Available Here for You!</p>
         </article>
-      </section>
+      </section> -->
 
 
 
@@ -219,13 +405,13 @@
 
     </section>
 
-</section>
+  </section>
 
 
 
 
 
-      <!-- <div class="glide__arrows testimonial-arrow-controls steps-arrow-controls" data-glide-el="controls">
+  <!-- <div class="glide__arrows testimonial-arrow-controls steps-arrow-controls" data-glide-el="controls">
         <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" style="transform: rotate(180deg);">
             <g id="Group_2112" data-name="Group 2112" transform="translate(-613 -1957)">
@@ -248,7 +434,7 @@
         </button>
       </div> -->
 
-      <!-- <div class="glide__bullets steps-nav-controls" data-glide-el="controls[nav]">
+  <!-- <div class="glide__bullets steps-nav-controls" data-glide-el="controls[nav]">
         <button class="glide__bullet" data-glide-dir="=0"></button>
         <button class="glide__bullet" data-glide-dir="=1"></button>
         <button class="glide__bullet" data-glide-dir="=2"></button>
@@ -2821,57 +3007,57 @@
   </script>
 
 
-const section_first = document.getElementById("register-slide");
-const section_second = document.getElementById("search-slide");
-const section_third = document.getElementById("hire-slide");
-const section_fourth = document.getElementById("trial-slide");
+  const section_first = document.getElementById("register-slide");
+  const section_second = document.getElementById("search-slide");
+  const section_third = document.getElementById("hire-slide");
+  const section_fourth = document.getElementById("trial-slide");
 
 
 
-<script>
-  const map_img =  document.getElementById("steps-img");
-  let img_src = map_img.getAttribute("src");
+  <!-- <script>
+    const map_img = document.getElementById("steps-img");
+    let img_src = map_img.getAttribute("src");
 
-  let  slidecontent = document.getElementsByClassName("slideContent");
+    let slidecontent = document.getElementsByClassName("slideContent");
     for (i = 0; i < slidecontent.length; i++) {
-    slidecontent[i+1].style.cssText = "display:none";
-    console.log(slidecontent[i])
+      slidecontent[i + 1].style.cssText = "display:none";
+      console.log(slidecontent[i])
     }
 
-  console.log(img_src);
-  function mapping(){
-    event.preventDefault();
-    let route =    event.target.getAttribute('data-map');
-    let  slidecontent = document.getElementsByClassName("slideContent");
-    for (i = 0; i < slidecontent.length; i++) {
-    slidecontent[i].style.cssText = "opacity:0;visibility:hidden;height:0px;width:0px;";
-    console.log(slidecontent[i])
-    }
+    console.log(img_src);
+    function mapping() {
+      event.preventDefault();
+      let route = event.target.getAttribute('data-map');
+      let slidecontent = document.getElementsByClassName("slideContent");
+      for (i = 0; i < slidecontent.length; i++) {
+        slidecontent[i].style.cssText = "opacity:0;visibility:hidden;height:0px;width:0px;";
+        console.log(slidecontent[i])
+      }
 
 
-console.log(route);
-    switch(route){
-    
-   case "registeration":
-    map_img.setAttribute("src","images/simple-3-steps--1.png");
-    slidecontent[0].style.cssText = "opacity:1;visibility:visible;height:auto;width:100%;";
-    break;
-    case "searching":
-    map_img.setAttribute("src","images/simple-3-steps--2.png");
-    slidecontent[1].style.cssText =  "opacity:1;visibility:visible;height:auto;width:100%;";
-    break;
-    case "hiring":
-    map_img.setAttribute("src","images/simple-3-steps--3.png");
-    slidecontent[2].style.cssText =  "opacity:1;visibility:visible;height:auto;width:100%;";
-    break;
-    case "trials":
-    map_img.setAttribute("src","images/simple-3-steps--4.png");
-    slidecontent[3].style.cssText =  "opacity:1;visibility:visible;height:auto;width:100%;";
-    break;
+      console.log(route);
+      switch (route) {
+
+        case "registeration":
+          map_img.setAttribute("src", "images/simple-3-steps--1.png");
+          slidecontent[0].style.cssText = "opacity:1;visibility:visible;height:auto;width:100%;";
+          break;
+        case "searching":
+          map_img.setAttribute("src", "images/simple-3-steps--2.png");
+          slidecontent[1].style.cssText = "opacity:1;visibility:visible;height:auto;width:100%;";
+          break;
+        case "hiring":
+          map_img.setAttribute("src", "images/simple-3-steps--3.png");
+          slidecontent[2].style.cssText = "opacity:1;visibility:visible;height:auto;width:100%;";
+          break;
+        case "trials":
+          map_img.setAttribute("src", "images/simple-3-steps--4.png");
+          slidecontent[3].style.cssText = "opacity:1;visibility:visible;height:auto;width:100%;";
+          break;
+      }
+
     }
-    
-  }
-</script>
+  </script> -->
 
 
 
@@ -2997,11 +3183,11 @@ console.log(route);
     window.scrollTo(0, 0)
   </script>
 
-<script>
-$(document).ready(function(e) {
-    $('img[usemap]').rwdImageMaps();
-});
-</script>
+  <script>
+    $(document).ready(function (e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
 
 </body>
 
