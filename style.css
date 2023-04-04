@@ -286,7 +286,7 @@ section.lp-sc2 {
 article.maid-online {
   border: 0.75px solid #D6D6D6;
   border-radius: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   max-width: 812px;
   width: 100%;
   margin-left: auto;
@@ -299,7 +299,7 @@ article.maid-online {
 .maid-online p {
   color: #545454;
   font-size: 24px;
-  margin-block: 52px 55px;
+  margin-block: 27px 35px;
 }
 
 .maid-online a.search-link {
@@ -311,6 +311,7 @@ article.maid-online {
   text-align: center;
   text-decoration: none;
   max-width: 358px;
+  line-height: 28px;
 }
 
 .maid-available {
@@ -2459,7 +2460,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Landing Page -- Section 2 */
 
 .three-steps-sec {justify-content: space-between;margin-bottom: 140px;gap: 1.5rem;}
-.three-steps-sec .nav{max-width: 532px;width: 100%;position: relative;height: 550px;}
+.three-steps-sec .nav{max-width: 532px;width: 100%;position: relative;height: 500px;margin-right: 1rem;}
 
 .three-steps-sec .nav-pills .nav-link{    height: 150px;width: 150px;display: flex; flex-direction: column; justify-content: center;align-items: center;border-radius: 50%;background-color: rgba(160, 127, 181, 0.7);gap: 1rem;  color: white;}
 .three-steps-sec .nav-pills .nav-link.active{background-color: rgba(143, 104, 169, 1);}
@@ -2518,11 +2519,9 @@ input[type="number"]::-webkit-inner-spin-button {
     bottom: 12%;
     left: 0%;
 }
-.hire-outward-arrow{right: 100%;right: 12rem;
-  scale: 1.1;}
-.trial-outward-arrow{        transform: rotate(113deg);
-  right: -8rem;
-  top: -11rem; scale: 1.4;}
+.hire-outward-arrow{    width: 100%;right: 16rem;scale: 1.1;}
+.trial-outward-arrow{    transform: rotate(113deg);right: -8rem;top: -9rem;scale: 1.2;}
+.search-outward-arrow{transform: rotate(250deg);right: -10rem;top: 17rem;scale: 1.2;}
 
 .lp-sc2--cards{width: 100%;transform-origin:top;transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);}
 .image-slideshow{width: 70%;align-self: center;}
